@@ -28,6 +28,10 @@
       <strong>หน้าจอแสดงข้อผิดพลาด</strong><br>
       <img src="./screenshot/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-02-12%20at%2021.24.08.png" alt="Error">
     </td>
+    <td>
+      <strong>หน้าจอแสดง API Error</strong><br>
+      <img src="./screenshot/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-02-12%20at%2021.34.26.png" alt="New Screenshot">
+    </td>
   </tr>
 </table>
 
