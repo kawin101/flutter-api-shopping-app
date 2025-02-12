@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_shopping_app/utils/app_colors.dart';
 
 class CheckoutSuccessScreen extends StatelessWidget {
   @override
@@ -20,7 +21,7 @@ class CheckoutSuccessScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.purple),
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.buttonPurple),
               onPressed: () => Navigator.popUntil(context, ModalRoute.withName('/')),
               child: Text('Shop again', style: TextStyle(color: Colors.white)),
             ),
