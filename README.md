@@ -1,5 +1,22 @@
 # **Shopping App (Flutter)**
 
+## **Screenshots**
+
+### **หน้าจอแสดงรายการสินค้า**
+![Product List](./screenshot/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-02-12%20at%2021.22.32.png)
+
+### **หน้าจอแสดงตะกร้าสินค้า**
+![Cart](./screenshot/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-02-12%20at%2021.22.38.png)
+
+### **หน้าจอ Checkout**
+![Checkout](./screenshot/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-02-12%20at%2021.22.47.png)
+
+### **หน้าจอแสดงผลสำเร็จ**
+![Success](./screenshot/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-02-12%20at%2021.23.41.png)
+
+### **หน้าจอแสดงข้อผิดพลาด**
+![Error](./screenshot/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-02-12%20at%2021.24.08.png)
+
 ## **เกี่ยวกับโปรเจกต์**
 Shopping App เป็นแอปพลิเคชันตัวอย่างสำหรับการซื้อสินค้า โดยมีฟังก์ชันหลักดังนี้:
 - แสดงรายการสินค้า
