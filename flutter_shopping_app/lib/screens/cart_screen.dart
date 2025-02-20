@@ -8,8 +8,14 @@ import 'package:http/http.dart' as http;
 import 'package:flutter_shopping_app/providers/cart_provider.dart';
 import 'package:flutter_shopping_app/screens/checkout_screen.dart';
 
-class CartScreen extends StatelessWidget {
+class CartScreen extends StatefulWidget {
+  @override
+  State<CartScreen> createState() => _CartScreenState();
+}
+
+class _CartScreenState extends State<CartScreen> {
   final Logger _logger = Logger();
+  TextEditingController _couponController = TextEditingController();
 
   Future<void> _checkout(BuildContext context) async {
     final cartProvider = Provider.of<CartProvider>(context, listen: false);
@@ -186,6 +192,7 @@ class CartScreen extends StatelessWidget {
   Widget _buildCheckoutBar(BuildContext context, double subtotal) {
     final cartProvider = Provider.of<CartProvider>(context);
     final double discount = cartProvider.calculateDiscount();
+    // final double totalWithCoupon = 100;
     final double totalWithDiscount = cartProvider.totalPriceWithDiscount;
 
     return Container(
@@ -194,8 +201,26 @@ class CartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          //TODO: text input for coupon code
+          //TODO: button to apply coupon
+          TextField(
+            controller: _couponController,
+            decoration: InputDecoration(
+              hintText: 'Enter coupon code',
+              hintStyle: TextStyle(color: Colors.grey),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              contentPadding: EdgeInsets.symmetric(horizontal: 16),
+            ),
+          ),
+          ElevatedButton(onPressed: () {
+            //TODO: call copuon discount function
+          }, child: Text('Apply')),
+          SizedBox(height: 10),
           _buildSummaryRow('Subtotal', subtotal),
           _buildSummaryRow('Promotion discount', discount, isDiscount: true),
+          _buildSummaryRow('Coupon discount', totalWithDiscount, isDiscount: true),
           Divider(),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 8),

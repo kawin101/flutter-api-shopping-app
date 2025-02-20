@@ -74,6 +74,13 @@ class CartProvider with ChangeNotifier {
     return subtotal - calculateDiscount();
   }
 
+    double get totalPriceWithCouponDiscount {
+    return subtotal - 100.00;
+  }
+
+  //TODO: function for coupon discount code = "DISCOUNT100"
+
+
   void clearCart() {
     _cartItems.clear();
     notifyListeners();
